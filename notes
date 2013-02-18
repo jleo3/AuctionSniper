@@ -1,0 +1,8 @@
+-- ApplicationRunner wraps up all the management and communicating with the WPF application we're building...
+  It runs the application
+  It holds a reference to its main window for querying the state of the GUI
+  It shuts down the application at the end of the test
+
+CodedUI can do all of these things so I'll set it up that way.
+
+
