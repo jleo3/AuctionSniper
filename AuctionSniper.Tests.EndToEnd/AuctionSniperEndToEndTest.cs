@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using Machine.Specifications;
 
-namespace AuctionSniper
+// ReSharper disable InconsistentNaming 
+// ReSharper disable CheckNamespace
+namespace AuctionSniper.Tests.EndToEnd
 {
     public class AuctionSniperEndToEndTest
     {
         static FakeAuctionServer Auction = new FakeAuctionServer("item-54321");
         static ApplicationRunner Application = new ApplicationRunner();
 
-        private It will_execute_each_step = () =>
+        private It will_execute_each_step = () => 
             {
                 Auction.StartSellingItem();
                 Application.StartBiddingIn(Auction);

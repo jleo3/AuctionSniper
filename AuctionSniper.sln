@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionSniper", "AuctionSniper\AuctionSniper.csproj", "{79B4E469-BC6C-4EFC-8FEC-C0B4FFB0E535}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionSniper.Tests.EndToEnd", "AuctionSniper.Tests.EndToEnd\AuctionSniper.Tests.EndToEnd.csproj", "{5589A1AD-C94A-4733-8639-403D1D260BEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{79B4E469-BC6C-4EFC-8FEC-C0B4FFB0E535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B4E469-BC6C-4EFC-8FEC-C0B4FFB0E535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79B4E469-BC6C-4EFC-8FEC-C0B4FFB0E535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5589A1AD-C94A-4733-8639-403D1D260BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5589A1AD-C94A-4733-8639-403D1D260BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5589A1AD-C94A-4733-8639-403D1D260BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5589A1AD-C94A-4733-8639-403D1D260BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

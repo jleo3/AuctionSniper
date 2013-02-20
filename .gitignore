@@ -2,3 +2,7 @@ AuctionSniper.v11.suo
 AuctionSniper.ncrunch*
 AuctionSniper/bin
 AuctionSniper/obj
+_NCrunch*
+
+AuctionSniper.Tests.EndToEnd/bin
+AuctionSniper.Tests.EndToEnd/obj
