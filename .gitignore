@@ -2,7 +2,6 @@ AuctionSniper.v11.suo
 AuctionSniper.ncrunch*
 AuctionSniper/bin
 AuctionSniper/obj
-_NCrunch*
 
 AuctionSniper.Tests.EndToEnd/bin
 AuctionSniper.Tests.EndToEnd/obj
@@ -12,7 +11,10 @@ AuctionSniper.Tests.CodedUI/bin
 AuctionSniper.Tests.CodedUI/obj
 AuctionSniper.Tests.CodedUI/*ncrunch*
 
-
 AuctionSniper.Tests.Common/bin
 AuctionSniper.Tests.Common/obj
 AuctionSniper.Tests.Common/*ncrunch*
+
+TestResults
+_NCrunch*
+*DotSettings*

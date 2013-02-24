@@ -24,8 +24,22 @@ namespace AuctionSniper.Tests.CodedUI
         [TestMethod]
         public void TestAuctionSniperBidsAndLoses()
         {
-            // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-            // For more information on generated code, see http://go.microsoft.com/fwlink/?LinkId=179463
+            StartBiddingIn(new FakeAuctionServer("fake_item"));
+            var STATUS_JOINING = "joined";
+            Assert.AreEqual(STATUS_JOINING, SniperStatus());
+            Application.Exit();
+        }
+
+        [TestMethod]
+        public void TestAuctionSniperShowsLosingStatus()
+        {
+            var STATUS_LOST = "lost";
+            Assert.AreEqual(STATUS_LOST, SniperStatus());
+        }
+
+        private string SniperStatus()
+        {
+            throw new NotImplementedException();
         }
 
         private void StartBiddingIn(FakeAuctionServer auction)
