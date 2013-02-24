@@ -64,8 +64,16 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BidAndLoseTest.cs" />
+    <Compile Include="BidAndLoseTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuctionSniper.Tests.Common\AuctionSniper.Tests.Common.csproj">
+      <Project>{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}</Project>
+      <Name>AuctionSniper.Tests.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

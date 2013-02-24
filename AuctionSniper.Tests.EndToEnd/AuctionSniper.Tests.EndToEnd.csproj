@@ -110,6 +110,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuctionSniper.Tests.Common\AuctionSniper.Tests.Common.csproj">
+      <Project>{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}</Project>
+      <Name>AuctionSniper.Tests.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionSniper.Tests.EndToEn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionSniper.Tests.CodedUI", "AuctionSniper.Tests.CodedUI\AuctionSniper.Tests.CodedUI.csproj", "{BD9E68C2-D31D-4121-AA50-C84D8FEE8801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionSniper.Tests.Common", "AuctionSniper.Tests.Common\AuctionSniper.Tests.Common.csproj", "{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{BD9E68C2-D31D-4121-AA50-C84D8FEE8801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD9E68C2-D31D-4121-AA50-C84D8FEE8801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD9E68C2-D31D-4121-AA50-C84D8FEE8801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B556E3-DC89-4ED4-8801-B3ED0CE6359E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

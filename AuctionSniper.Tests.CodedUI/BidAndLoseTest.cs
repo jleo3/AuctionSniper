@@ -1,4 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UITesting;
+﻿using System;
+using System.Windows.Forms;
+using AuctionSniper.Tests.Common;
+using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AuctionSniper.Tests.CodedUI
@@ -9,6 +12,9 @@ namespace AuctionSniper.Tests.CodedUI
     [CodedUITest]
     public class BidAndLoseTest
     {
+        public static string XMPP_HOSTNAME = "localhost";
+        public static string SNIPER_ID = "sniper";
+        public static string SNIPER_PASSWORD = "sniper";
 // ReSharper disable EmptyConstructor
         public BidAndLoseTest()
 // ReSharper restore EmptyConstructor
@@ -16,12 +22,27 @@ namespace AuctionSniper.Tests.CodedUI
         }
 
         [TestMethod]
-        public void StartBiddingIn()
+        public void TestAuctionSniperBidsAndLoses()
         {
             // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
             // For more information on generated code, see http://go.microsoft.com/fwlink/?LinkId=179463
         }
 
+        private void StartBiddingIn(FakeAuctionServer auction)
+        {
+            try
+            {
+                var auctionForm = new AuctionForm(XMPP_HOSTNAME, SNIPER_ID, SNIPER_PASSWORD, auction.GetItemID());
+                Application.Run(auctionForm);
+            }
+            catch (Exception e)
+            {
+                System.Console.WriteLine(e.StackTrace);
+            }
+        }
+        // Start the application by running with App
+        // show status as started
+        // 
         #region Additional test attributes
 
         // You can use the following additional attributes as you write your tests:
@@ -60,5 +81,13 @@ namespace AuctionSniper.Tests.CodedUI
             }
         }
         private TestContext testContextInstance;
+    }
+
+    internal class AuctionForm : Form
+    {
+        public AuctionForm(string xmppHostname, string sniperID, string sniperPassword, int getItemID)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

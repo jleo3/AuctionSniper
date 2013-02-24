@@ -1,4 +1,5 @@
 using System;
+using AuctionSniper.Tests.Common;
 using Machine.Specifications;
 
 // ReSharper disable InconsistentNaming 
@@ -28,29 +29,6 @@ namespace AuctionSniper.Tests.EndToEnd
         }
 
         public void ShowsSniperHasLostAuction()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    internal class FakeAuctionServer
-    {
-        public FakeAuctionServer(string item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void StartSellingItem()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void HasReceivedJoinRequestFromSniper()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AnnounceClosed()
         {
             throw new NotImplementedException();
         }
