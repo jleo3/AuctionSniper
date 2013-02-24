@@ -6,3 +6,8 @@ _NCrunch*
 
 AuctionSniper.Tests.EndToEnd/bin
 AuctionSniper.Tests.EndToEnd/obj
+AuctionSniper.Tests.EndToEnd/*ncrunch*
+
+AuctionSniper.Tests.CodedUI/bin
+AuctionSniper.Tests.CodedUI/obj
+AuctionSniper.Tests.CodedUI/*ncrunch*
